@@ -1,0 +1,72 @@
+.todoItem{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.todoItem:hover{
+    background-color: #f1f1f1;
+}
+
+.tag{
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.desc{
+    color: #555;
+    margin: 5px 0 0;
+}
+.button-conteiner{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+button{
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.todoItem.active {
+    background-color: #fff;
+    border-left: 5px solid #ff6b6b;
+}
+
+.todoItem.completed {
+    background-color: #e0e0e0;
+    color: #999;
+}
+
+.todoItem.completed .title,
+.todoItem.completed .desc {
+    text-decoration: line-through;
+}
+
+.todoItem button.complete {
+    background-color: #4caf50;
+    color: white;
+    margin-right: 10px;
+}
+
+.todoItem button.complete:hover {
+    background-color: #388e3c;
+}
